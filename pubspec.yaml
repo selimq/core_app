@@ -28,26 +28,22 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
-
+  dio: ^4.0.4
+  easy_localization: ^3.0.0
+  equatable: ^2.0.3
   flutter:
     sdk: flutter
-
-  #Utility
-  equatable: ^2.0.3
-  #Network
-  dio: ^4.0.4
-  #Localization
-  easy_localization: ^3.0.0
-  #Caching
+  flutter_bloc: ^8.0.1
   get_storage: ^2.0.3
-  #Google
+  intl: ^0.17.0
   json_annotation: ^4.4.0
   json_serializable: ^6.1.4
-  #State
   provider: ^6.0.2
-  flutter_bloc: ^8.0.1
+  pubspec_parse: ^1.2.0
+  yaml: ^3.1.0
 
 dev_dependencies:
+  build_runner: ^2.1.4
   flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
@@ -61,8 +57,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/translation/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,3 +1,7 @@
+import 'package:core_app/core/components/text/locale_text.dart';
+import 'package:core_app/core/init/language/language_manager.dart';
+import 'package:core_app/generated/locale_keys.g.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:core_app/features/home/cubit/home_cubit.dart';
@@ -43,7 +47,14 @@ class _HomeViewState extends State<HomeView> {
   Widget buildBody(HomeState state) {
     return ListView(
       children: [
-        // TODO your code here
+        LocaleText(value: LocaleKeys.welcome),
+        Text(context.locale.toString()),
+        TextButton(
+          child: Text("Change lang"),
+          onPressed: () {
+            LanguageManager.instance.changeLanguage(context);
+          },
+        )
       ],
     );
   }

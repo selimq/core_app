@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class LanguageManager {
   static LanguageManager? _instance;
@@ -8,7 +9,15 @@ class LanguageManager {
   }
 
   LanguageManager._init();
-  final enLocale = const Locale('en');
-  final trLocale = const Locale('tr');
+  final enLocale = const Locale('en', "US");
+  final trLocale = const Locale('tr', "TR");
   List<Locale> get supportedLocales => [enLocale, trLocale];
+
+  void changeLanguage(BuildContext context) {
+    if (context.locale == enLocale) {
+      context.setLocale(trLocale);
+    } else {
+      context.setLocale(enLocale);
+    }
+  }
 }

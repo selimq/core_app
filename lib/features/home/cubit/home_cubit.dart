@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:core_app/features/home/cubit/home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
-  HomeCubit() : super(HomeState(isLoading: true));
+  HomeCubit() : super(const HomeState(isLoading: true));
 
   Future<void> loadInitialData() async {
     final stableState = state;
