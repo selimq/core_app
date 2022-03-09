@@ -1,3 +1,4 @@
+import 'package:core_app/product/constant/application_constant.dart';
 import 'package:dio/dio.dart';
 
 import 'core_dio.dart';
@@ -10,10 +11,11 @@ class NetworkManager {
     return _instace!;
   }
 
-  late ICoreDio coreDio;
+  late ICoreDioNullSafety coreDio;
 
   NetworkManager._init() {
-    final baseOptions = BaseOptions(baseUrl: "https://apiurel", headers: {});
+    final baseOptions =
+        BaseOptions(baseUrl: ApplicationConstant.instance.baseUrl, headers: {});
     coreDio = CoreDio(baseOptions);
   }
 }

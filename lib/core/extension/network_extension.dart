@@ -7,6 +7,10 @@ extension NetworkTypeExtension on HttpTypes {
         return "GET";
       case HttpTypes.POST:
         return "POST";
+      case HttpTypes.PUT:
+        return "PUT";
+      case HttpTypes.DELETE:
+        return "DELETE";
       default:
         throw "ERROR TYPE";
     }

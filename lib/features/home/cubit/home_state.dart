@@ -16,4 +16,16 @@ class HomeState {
 			error: error ?? this.error,
 		);
 	}
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+  
+    return other is HomeState &&
+      other.isLoading == isLoading &&
+      other.error == error;
+  }
+
+  @override
+  int get hashCode => isLoading.hashCode ^ error.hashCode;
 }

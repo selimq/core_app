@@ -26,7 +26,7 @@ class AppThemeLight extends AppTheme with ILightTheme {
         secondary: colorSchemeLight!.azure,
         secondaryVariant: colorSchemeLight!.lightGray,
         surface: Colors.blue, //xx
-        background: const Color(0xfff6f9fc), //xx
+        background: Color.fromARGB(255, 240, 248, 255), //xx
         error: Colors.red[900]!,
         onPrimary: Colors.white,
         onSecondary: Colors.black, //x

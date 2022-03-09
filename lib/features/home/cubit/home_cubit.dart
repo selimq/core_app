@@ -9,9 +9,11 @@ class HomeCubit extends Cubit<HomeState> {
     try {
       emit(state.copyWith(isLoading: true));
 
-      // TODO your code here
+      await Future.delayed(Duration(seconds: 2));
 
       emit(state.copyWith(isLoading: false));
+      await Future.delayed(Duration(seconds: 2));
+      emit(state.copyWith(error: "hata"));
     } catch (error) {
       emit(state.copyWith(error: error.toString()));
       emit(stableState.copyWith(isLoading: false));

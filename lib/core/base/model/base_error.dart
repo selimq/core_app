@@ -1,4 +1,6 @@
-class BaseError {
+import 'package:core_app/core/init/network/model/IResponseModel.dart';
+
+class BaseError extends IErrorModel {
   final String message;
-  BaseError({required this.message});
+  BaseError(this.message);
 }
