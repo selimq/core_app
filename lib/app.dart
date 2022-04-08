@@ -21,7 +21,7 @@ class App extends StatelessWidget {
       locale: context.locale,
       debugShowCheckedModeBanner: false,
       theme: Provider.of<ThemeNotifier>(context, listen: false).currentTheme,
-      home: const LoginView(),
+      home: const HomeView(),
       navigatorKey: NavigationService.instance.navigatorKey,
       onGenerateRoute: NavigationRoute.instance.generateRoute,
     );

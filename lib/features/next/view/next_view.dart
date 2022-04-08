@@ -5,8 +5,8 @@ class NextView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("3"),
+    return Scaffold(
+      body: Text("3"),
     );
   }
 }

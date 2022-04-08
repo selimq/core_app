@@ -78,7 +78,7 @@ class _HomeViewState extends State<HomeView> {
               NavigationService.instance
                   .navigateToPage(NavigationConstants.NEXT);
             },
-            child: Text("sd"))
+            child: Text("Navigate Page"))
       ],
     );
   }
