@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import 'core/init/navigation/navigation_route.dart';
 import 'core/init/navigation/navigation_service.dart';
 import 'core/init/notifier/theme_notifier.dart';
-import 'features/home/view/home_view.dart';
+import 'features/home_mvvm/view/home_view.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);

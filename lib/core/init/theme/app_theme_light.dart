@@ -21,18 +21,19 @@ class AppThemeLight extends AppTheme with ILightTheme {
 
   ColorScheme get _appColorScheme {
     return ColorScheme(
-        primary: colorSchemeLight!.azure,
-        primaryVariant: colorSchemeLight!.white, //xx
-        secondary: colorSchemeLight!.azure,
-        secondaryVariant: colorSchemeLight!.lightGray,
-        surface: Colors.blue, //xx
-        background: Color.fromARGB(255, 240, 248, 255), //xx
-        error: Colors.red[900]!,
-        onPrimary: Colors.white,
-        onSecondary: Colors.black, //x
-        onSurface: Colors.purple.shade300,
-        onBackground: Colors.black12,
-        onError: const Color(0xFFF9B916), //xx
-        brightness: Brightness.light);
+      primary: colorSchemeLight!.azure,
+      primaryContainer: colorSchemeLight!.white, //xx
+      secondary: colorSchemeLight!.azure,
+      secondaryContainer: colorSchemeLight!.lightGray,
+      surface: Colors.blue, //xx
+      background: const Color.fromARGB(255, 240, 248, 255), //xx
+      error: Colors.red[900]!,
+      onPrimary: Colors.white,
+      onSecondary: Colors.black, //x
+      onSurface: Colors.purple.shade300,
+      onBackground: Colors.black12,
+      onError: const Color(0xFFF9B916), //xx
+      brightness: Brightness.light,
+    );
   }
 }

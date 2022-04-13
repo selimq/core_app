@@ -1,3 +1,5 @@
+import 'package:core_app/features/home/view/home_view.dart';
+import 'package:core_app/features/home_mvvm/view_model/home_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 
@@ -15,6 +17,7 @@ class ApplicationProvider {
   List<SingleChildWidget> singleItems = [];
   List<SingleChildWidget> dependItems = [
     ChangeNotifierProvider(create: (context) => ThemeNotifier()),
+    ChangeNotifierProvider(create: (context) => HomeViewModel()),
     Provider.value(value: NavigationService.instance)
   ];
   List<SingleChildWidget> uiChangesItems = [];

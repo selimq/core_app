@@ -1,5 +1,4 @@
 import 'package:core_app/features/home/view/home_view.dart';
-import 'package:core_app/features/next/view/next_view.dart';
 import 'package:flutter/material.dart';
 import '../../components/card/not_found_navigation_widget.dart';
 import '../../constants/navigation/navigation_constants.dart';
@@ -13,8 +12,7 @@ class NavigationRoute {
     switch (args.name) {
       case NavigationConstants.HOME_VIEW:
         return normalNavigate(const HomeView());
-      case NavigationConstants.NEXT:
-        return normalNavigate(const NextView());
+
       /*
       case NavigationConstants.ABC_VIEW:
         return normalNavigate(const ABC());
